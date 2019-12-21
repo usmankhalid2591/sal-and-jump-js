@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+
+	<!-- Fontawesome Kit -->
+	<script src="js/fontawesome.js"></script>
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Sal.css -->
+	<link rel="stylesheet" href="node_modules/sal.js/dist/sal.css">
+
+	<title>New</title>
+</head>
+
+<body>
+
+	<section class="target3">
+		<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Scroll
+			me! Lorem ipsum dolor sit amet consectetur</h1>
+			<button id="button" class="btn btn-primary">Click me!</button id="button">
+	</section>
+
+	<section class="target2">
+		<div class="left" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+			<h3>Loremipsum dolor sit amet</h3>
+			<p> consectetur adipisicing elit. Quaerat repellendus in eaque exercitationem modi sapiente
+				quam laudantium ipsa?</p>
+				<button id="button3" class="btn btn-primary">Click me!</button>
+		</div>
+		<div class="right" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="600" data-sal-easing="ease-out-bounce">
+			<img src="img/icon.svg" alt="">
+		</div>
+	</section>
+
+	<section class="target">
+		<div class="one" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+			<h3>Keep</h3>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+		</div>
+
+		<div class="two" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-bounce">
+			<h3>It</h3>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+		</div>
+
+		<div class="three" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="700" data-sal-easing="ease-out-bounce">
+			<h3>Scrolling</h3>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+		</div>
+		<button id="button2" class="btn btn-primary">Click me!</button>
+	</section>
+
+	<!-- Script tags -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="node_modules/sal.js/dist/sal.js"></script>
+	<script src="js/custom.js"></script>
+	<script type="module">
+
+		import jump from './node_modules/jump.js/dist/jump.module.js';
+
+		var button  = document.getElementById('button');
+		var button2  = document.getElementById('button2');
+		var button3  = document.getElementById('button3');
+
+		button.addEventListener('click', () => {
+			jump('.target', {
+				duration: 3000,
+			});
+		});
+
+		button2.addEventListener('click', () => {
+			jump('.target2');
+		});
+
+		button3.addEventListener('click', () => {
+			jump('.target3');
+		});
+
+	</script>
+
+</body>
+
+</html>
